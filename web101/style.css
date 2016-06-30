@@ -1,0 +1,132 @@
+body {
+	display:block;
+	height: 100%;
+	overflow:hidden;
+	margin:0;
+	font-family: Arial;
+}
+
+.background {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	background-image: url("assets/bg.jpg");
+}
+
+
+.center {
+	position: absolute;
+    display: block;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    height: 13px; 
+}
+
+
+#centerclock h1,#greeting h2 {
+    text-align: center;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    letter-spacing: -5px;
+    font-size: 1000%;
+    font-weight: 400;
+}
+
+#greeting h2 {
+	font-size: 337.5%;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+
+.bottom-right {
+	position:absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.todo {
+    text-align: right;
+    text-shadow: none;
+    user-select: none;
+}
+
+.widget-bottom-right {
+	display:inline-block;
+    position: relative;
+}
+
+
+.pane {
+    min-width: 200px;
+    max-width: 400px;
+    background: black;
+    border-radius: 3px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.todo-pane {
+	margin: 5px;
+    height: auto;
+    width: 300px;
+    right: 3px;
+    text-align: left;
+    -webkit-transition: all .2s ease;
+}
+
+.todo-list {
+	list-style: none;
+	padding: 0;
+}
+
+.todo-item-title {
+    margin: 0 32px 0 18px;
+    color:white;
+    display: block;
+    cursor: pointer;
+    opacity: .96;
+}
+
+.todo-item {
+    padding-left: 15px;
+    font-size: 15px;
+    line-height: 120%;
+}
+
+
+.todo-item .view {
+    position: relative;
+}
+
+.todo-item label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding-right: 5px;
+    line-height: 15px;
+}
+
+.pane input, .pane select, .pane textarea {
+    color: #fff;
+}
+
+input {
+	background:0;
+}
+.todo-input {
+	width: 100%;
+    padding: 8px 15px 13px;
+    width: 251px;
+    border: 0;
+    font-size: 15px;
+    opacity: .75;
+}
